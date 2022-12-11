@@ -1,5 +1,7 @@
 from os import system
 
+print("Welcome to the World Clock App")
+
 def options():
     print("1. Current time zone")
     print("2. Predicting time Zone")
