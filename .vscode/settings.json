@@ -2,5 +2,8 @@
   "python.pythonPath": "env/bin/python",
   "python.linting.pep8Enabled": true,
 "python.linting.pylintEnabled": true,
-"python.linting.enabled": false
+"python.linting.enabled": false,
+"cSpell.words": [
+    "pytz"
+]
 }

@@ -34,7 +34,7 @@ ___
 **Implementation Plan**
 
 
-[Implementation Plan](https://docs.google.com/spreadsheets/d/1bcsrLpC5Tt1KbHsfq45CiAKg02adXVFg_ZotOB89WN8/edit?usp=sharing)
+[Implementation Plan]()
 
 ___
 
