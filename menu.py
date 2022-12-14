@@ -6,16 +6,17 @@ print("Welcome to the World Clock App")
 
 # Nesting dictionaries in a list 
 
-
 list_of_cities = [
     {"city": "Sydney", "timezone": "Australia/Sydney"},
     {"city": "Bogota", "timezone": "America/Bogota"},
     {"city": "Auckland", "timezone": "Pacific/Auckland"},
     {"city": "Berlin", "timezone": "Europe/Berlin"},
     {"city": "London", "timezone": "Europe/London"},
-    {"city": "New York", "timezone": "America/New_York"},
-    {"city": "Los Angeles", "timezone": "America/Los_Angeles"},
+    {"city": "Rome", "timezone": "Europe/Rome"},
+    {"city": "Tokyo", "timezone": "Asia/Tokio"},
 ]
+
+# Creating Menu_1
 
 def options_menu1():
     print("1. Current")
@@ -25,24 +26,43 @@ def options_menu1():
     return user_selection
 
 selection = ""
-city = ""
+city_1 = ""
+city_2 = ""
+
+# While loop Menu 1
 
 while selection != "3":
     selection = options_menu1()
     if selection == "1":
         system("clear")
-        print("Select City number one")
+        print("Select City Number 1")
 
-        
-        only_the_cities = []
-        for city in list_of_cities:
-            only_the_cities.append(city["city"])
-        # options = ["Current Time Zone", "Predicting Time Zone", "Quit"]
-            mainMenu = TerminalMenu(only_the_cities)
-            mainMenu.show()
-            # print("you select " + mainMenu.chosen_menu_entry)
+# Creating Menu 2 using Simple_Terminal_ Menu package 
+        only_cities = ["Sydney","Bogota", "Auckland ","Berlin", "London", "Rome, Tokyo"]
+
+# Displaying a list of cities into Menu 2
+
+        Menu_2 = TerminalMenu(only_cities)
+        Menu_2.show()
+
+# Matching cities from the menu with the nested dictionary 
+
+        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
+
+# Saving City 1 
+
+        city_1 = list_of_cities [Menu_2.chosen_menu_index]
+
+        print (" Select City Number 2 ")
 
 
+# Display Menu 2 again for users to select the City 2 
+        Menu_2 = TerminalMenu(only_cities)
+        Menu_2.show()
+        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
+
+# Saving City 2 
+        city_2= list_of_cities [Menu_2.chosen_menu_index]
         
     elif selection == "2":
         print ("welcome to predicting TZ")
