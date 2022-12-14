@@ -4,6 +4,9 @@ from simple_term_menu import TerminalMenu
 
 print("Welcome to the World Clock App")
 
+# Nesting dictionaries in a list 
+
+
 list_of_cities = [
     {"city": "Sydney", "timezone": "Australia/Sydney"},
     {"city": "Bogota", "timezone": "America/Bogota"},
@@ -22,6 +25,7 @@ def options_menu1():
     return user_selection
 
 selection = ""
+city = ""
 
 while selection != "3":
     selection = options_menu1()
@@ -29,6 +33,7 @@ while selection != "3":
         system("clear")
         print("Select City number one")
 
+        
         only_the_cities = []
         for city in list_of_cities:
             only_the_cities.append(city["city"])
@@ -36,6 +41,8 @@ while selection != "3":
             mainMenu = TerminalMenu(only_the_cities)
             mainMenu.show()
             # print("you select " + mainMenu.chosen_menu_entry)
+
+
         
     elif selection == "2":
         print ("welcome to predicting TZ")

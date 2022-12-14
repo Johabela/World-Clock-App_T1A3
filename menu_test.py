@@ -1,10 +1,10 @@
 # Create the menu of the app 
-def options():
-    print("1")
-    print("2")
-    print("3")
-    return options
-options()
 
+from simple_term_menu import TerminalMenu
 
+options = ["Current Time Zone", "Predicting Time Zone", "Quit"]
+
+mainMenu = TerminalMenu (options)
+
+mainMenu.show()
 
