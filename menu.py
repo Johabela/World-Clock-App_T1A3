@@ -45,25 +45,25 @@ while selection != "3":
         Menu_2 = TerminalMenu(only_cities)
         Menu_2.show()
 
-# Matching cities from the menu with the nested dictionary 
-
+# Matching cities from the Menu 2 with the nested dictionary 
         print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
+    
 
 # Saving City 1 
-
         city_1 = list_of_cities [Menu_2.chosen_menu_index]
 
-        print (" Select City Number 2 ")
-
-
-# Display Menu 2 again for users to select the City 2 
+# Display Menu 2 again for users to select The City Number 2
+        print("Select City Number 2")
         Menu_2 = TerminalMenu(only_cities)
         Menu_2.show()
-        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
 
-# Saving City 2 
-        city_2= list_of_cities [Menu_2.chosen_menu_index]
-        
+# Matching cities from the Menu 2 with the nested dictionary for The City 2
+        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
+     
+
+# Saving City 1 
+        city_1 = list_of_cities [Menu_2.chosen_menu_index]
+
     elif selection == "2":
         print ("welcome to predicting TZ")
     elif selection == "3": 
