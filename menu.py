@@ -2,8 +2,8 @@ from os import system
 import pytz
 from simple_term_menu import TerminalMenu
 from pytz import timezone
-from datetime import datetime
-import time 
+from datetime import datetime, time 
+
 
 print("Welcome to the World Clock App")
 
@@ -22,7 +22,7 @@ list_of_cities = [
 # Creating Menu_1
 
 def options_menu1():
-    print("1. Current")
+    print("1. Current Time")
     print("2. Predicting time Zone")
     print("3. Exit")
     user_selection = input ("Select options from (1-3): ")
@@ -38,7 +38,7 @@ while selection != "3":
     selection = options_menu1()
     if selection == "1":
         system("clear")
-        print("Welcome to see the current time in two different Cities!")
+        print("Welcome to see the current time in two different Cities in the world!")
         print()
 
         print("Select The City Number One: ")
@@ -65,7 +65,7 @@ while selection != "3":
 
         time_zone_1 = pytz.timezone(city_1["timezone"])
         local_time_1=datetime.now(time_zone_1)
-        current_time_1=local_time_1.strftime("%a %x %H:%S")
+        current_time_1=local_time_1.strftime("%a %x %H:%M:%S")
         print(time_zone_1)
         print(current_time_1)
 
@@ -87,14 +87,28 @@ while selection != "3":
 
         time_zone_2 = pytz.timezone(city_2["timezone"])
         local_time_2=datetime.now(time_zone_2)
-        current_time_2= local_time_2.strftime("%a %x %H:%S")
+        current_time_2= local_time_2.strftime("%a %x %H:%M:%S")
         print(time_zone_2)
         print(current_time_2)
 
         print()
 
 # Saving City 2 
-        city_2 = list_of_cities [Menu_2.chosen_menu_index]
+        city_2 = list_of_cities [Menu_3.chosen_menu_index]
+
+# Calculate the time difference  
+
+        time_difference = int (local_time_1.strftime ("%z"))
+        time_difference_1= int(local_time_2.strftime ("%z"))
+
+        if (time_difference>time_difference_1):
+            print("Time difference between", (city_1["city"]), "and", (city_2["city"]), "is", (time_difference-time_difference_1) /100, "hours" )
+        
+        elif(time_difference==time_difference_1):
+            print("There is not time difference!")
+
+        
+
 
     elif selection == "2":
         print ("welcome to predicting TZ")
