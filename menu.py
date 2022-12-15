@@ -48,27 +48,43 @@ while selection != "3":
         Menu_2 = TerminalMenu(only_cities)
         Menu_2.show()
 
-# Matching cities from the Menu 2 with the nested dictionary 
-        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
-    
+
 # Saving City 1 
         city_1 = list_of_cities [Menu_2.chosen_menu_index]
 
+# Matching cities from the Menu 2 with the nested dictionary 
+
+        print(list_of_cities [Menu_2.chosen_menu_index]["city"])
+
 # Display Menu 2 again for users to select The City Number 2
         print("Select City Number 2")
-        Menu_2 = TerminalMenu(only_cities)
-        Menu_2.show()
+        Menu_3 = TerminalMenu(only_cities)
+        Menu_3.show()
 
 # Matching cities from the Menu 2 with the nested dictionary for The City 2
-        print  ("You selected: ", list_of_cities[Menu_2.chosen_menu_index])
+        print  ("You selected: ", list_of_cities[Menu_3.chosen_menu_index])
 
-# Time Zone date and current time City 1 
+# Saving City 2
+        city_2 = list_of_cities [Menu_3.chosen_menu_index]
+
+# Displaying Time Zone date and current time City 1 
 
         time_zone_1 = pytz.timezone(city_1["timezone"])
         local_time_1=datetime.now(time_zone_1)
         current_time_1=local_time_1.strftime("%a %x %H:%S")
         print(time_zone_1)
         print(current_time_1)
+
+
+# Displaying Time Zone date and current time City 2 
+
+        time_zone_2 = pytz.timezone(city_2["timezone"])
+        local_time_2=datetime.now(time_zone_2)
+        current_time_2= local_time_2.strftime("%a %x %H:%S")
+        print(time_zone_2)
+        print(current_time_2)
+
+
 
      
 
