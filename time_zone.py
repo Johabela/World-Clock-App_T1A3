@@ -4,7 +4,7 @@ import time
 import pytz
 
 
-city_country_1 = pytz.timezone("Australia/Sydney")
+city_country_1 = pytz.timezone()
 local_time_1=datetime.now(city_country_1)
 current_time_1=local_time_1.strftime("%a %x %H:%S")
 print(city_country_1)
