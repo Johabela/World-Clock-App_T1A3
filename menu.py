@@ -96,22 +96,23 @@ while selection != "3":
 # Saving City 2 
         city_2 = list_of_cities [Menu_3.chosen_menu_index]
 
-# Calculate the time difference  
+# Calculate and displaying the time difference between City 1 & City 2 
 
         time_difference = int (local_time_1.strftime ("%z"))
         time_difference_1= int(local_time_2.strftime ("%z"))
-
         if (time_difference>time_difference_1):
             print("Time difference between", (city_1["city"]), "and", (city_2["city"]), "is", (time_difference-time_difference_1) /100, "hours" )
-        
+
+# Taking in consideration if the cities don't have time difference. 
+
         elif(time_difference==time_difference_1):
             print("There is not time difference!")
 
-        
-
-
     elif selection == "2":
         print ("welcome to predicting TZ")
+
+# Predicting the time in the future 
+
     elif selection == "3": 
         continue 
     else: 
