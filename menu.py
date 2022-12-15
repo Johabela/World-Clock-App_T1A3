@@ -38,10 +38,14 @@ while selection != "3":
     selection = options_menu1()
     if selection == "1":
         system("clear")
-        print("Select City Number 1")
+        print("Welcome to see the current time in two different Cities!")
+        print()
+
+        print("Select The City Number One: ")
+        
 
 # Creating Menu 2 using Simple_Terminal_ Menu package 
-        only_cities = ["Sydney","Bogota", "Auckland ","Berlin", "London", "Rome, Tokyo"]
+        only_cities = ["Sydney","Bogota", "Auckland ","Berlin", "London", "Rome","Tokyo"]
 
 # Displaying a list of cities into Menu 2
 
@@ -54,18 +58,7 @@ while selection != "3":
 
 # Matching cities from the Menu 2 with the nested dictionary 
 
-        print(list_of_cities [Menu_2.chosen_menu_index]["city"])
-
-# Display Menu 2 again for users to select The City Number 2
-        print("Select City Number 2")
-        Menu_3 = TerminalMenu(only_cities)
-        Menu_3.show()
-
-# Saving City 2
-        city_2 = list_of_cities [Menu_3.chosen_menu_index]
-
-# Matching cities from the Menu 2 with the nested dictionary for The City 2
-        print(list_of_cities[Menu_3.chosen_menu_index]["city"])
+        # print(list_of_cities [Menu_2.chosen_menu_index]["city"])
 
 
 # Displaying Time Zone date and current time City 1 
@@ -76,6 +69,19 @@ while selection != "3":
         print(time_zone_1)
         print(current_time_1)
 
+        print()
+
+
+# Display Menu 2 again for users to select The City Number 2
+        print("Select The City Number Two:")
+        Menu_3 = TerminalMenu(only_cities)
+        Menu_3.show()
+
+# Saving City 2
+        city_2 = list_of_cities [Menu_3.chosen_menu_index]
+
+# Matching cities from the Menu 2 with the nested dictionary for The City 2
+        # print(list_of_cities[Menu_3.chosen_menu_index]["city"])
 
 # Displaying Time Zone date and current time City 2 
 
@@ -85,9 +91,7 @@ while selection != "3":
         print(time_zone_2)
         print(current_time_2)
 
-
-
-     
+        print()
 
 # Saving City 2 
         city_2 = list_of_cities [Menu_2.chosen_menu_index]
@@ -98,7 +102,7 @@ while selection != "3":
         continue 
     else: 
         print ("Invalid option")
-    input ("press any key to continue")
+    input ("press any key to go back to the main menu")
     system("clear")
  
 
