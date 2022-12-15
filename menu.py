@@ -61,11 +61,12 @@ while selection != "3":
         Menu_3 = TerminalMenu(only_cities)
         Menu_3.show()
 
-# Matching cities from the Menu 2 with the nested dictionary for The City 2
-        print  ("You selected: ", list_of_cities[Menu_3.chosen_menu_index])
-
 # Saving City 2
         city_2 = list_of_cities [Menu_3.chosen_menu_index]
+
+# Matching cities from the Menu 2 with the nested dictionary for The City 2
+        print(list_of_cities[Menu_3.chosen_menu_index]["city"])
+
 
 # Displaying Time Zone date and current time City 1 
 
