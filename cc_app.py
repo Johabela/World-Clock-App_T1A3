@@ -1,4 +1,5 @@
 from os import system
+from cities import *
 import pytz
 from simple_term_menu import TerminalMenu
 from pytz import timezone
@@ -7,19 +8,7 @@ from datetime import datetime, time
 print()
 print("This is the World Clock App")
 print()
-print("What would you like to do? ")
-# Nesting dictionaries in a list 
-
-list_of_cities = [
-    {"city": "Sydney", "timezone": "Australia/Sydney"},
-    {"city": "Bogota", "timezone": "America/Bogota"},
-    {"city": "Auckland", "timezone": "Pacific/Auckland"},
-    {"city": "Berlin", "timezone": "Europe/Berlin"},
-    {"city": "London", "timezone": "Europe/London"},
-    {"city": "Rome", "timezone": "Europe/Rome"},
-    {"city": "Tokyo", "timezone": "Asia/Tokio"},
-]
-
+print("What would you like to do?")
 
 # Creating Menu_1
 
@@ -42,7 +31,6 @@ while selection != "3":
         system("clear")
         print("Welcome to see the current time in two different Cities in the world!")
         print()
-
         print("Select The City Number One: ")
         
 
@@ -111,7 +99,7 @@ while selection != "3":
             print("There is not time difference!")
 
     elif selection == "2":
-        print ("welcome to predicting TZ")
+        print ("Predicting Time Zone is in progress")
 
 # Predicting the time in the future 
 
@@ -122,6 +110,3 @@ while selection != "3":
     input ("press any key to go back to the main menu")
     system("clear")
  
-
-
-
