@@ -4,9 +4,10 @@ from simple_term_menu import TerminalMenu
 from pytz import timezone
 from datetime import datetime, time 
 
-
-print("Welcome to the World Clock App")
-
+print()
+print("This is the World Clock App")
+print()
+print("What would you like to do? ")
 # Nesting dictionaries in a list 
 
 list_of_cities = [
@@ -19,11 +20,12 @@ list_of_cities = [
     {"city": "Tokyo", "timezone": "Asia/Tokio"},
 ]
 
+
 # Creating Menu_1
 
 def options_menu1():
-    print("1. Current Time")
-    print("2. Predicting time Zone")
+    print("1. See the current time in two different cities?")
+    print("2. Predict the time in two cities? ")
     print("3. Exit")
     user_selection = input ("Select options from (1-3): ")
     return user_selection
