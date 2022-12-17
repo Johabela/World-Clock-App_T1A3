@@ -1,14 +1,5 @@
-
-
-# Code to see the list of all the timezones in pytz package 
-
-# import pytz 
-# for tz in pytz.common_timezones:
-#     print (tz)
-
-
-# Nesting dictionaries in a list with some cities used in cc_app.py
-list_of_cities = [
+def cities():
+ list_of_cities = [
     {"city": "Sydney", "timezone": "Australia/Sydney"},
     {"city": "Bogota", "timezone": "America/Bogota"},
     {"city": "Auckland", "timezone": "Pacific/Auckland"},
@@ -17,8 +8,10 @@ list_of_cities = [
     {"city": "Rome", "timezone": "Europe/Rome"},
     {"city": "Tokyo", "timezone": "Asia/Tokyo"},
     ]
+ list_of_current_cities = [list_of_cities]
+ return list_of_current_cities
 
+city=cities()
 
- 
-
-
+def test_1():
+    assert city[2]["city"]!= "Auckland"

@@ -56,10 +56,13 @@ while selection != "3":
         time_zone_1 = pytz.timezone(city_1["timezone"])
         local_time_1=datetime.now(time_zone_1)
         current_time_1=local_time_1.strftime("%a %x %H:%M:%S")
+
         print(time_zone_1)
         print(current_time_1)
 
-        print()
+
+
+#         print()
 
 
 # Display Menu 2 again for users to select The City Number 2
