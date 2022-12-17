@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo "Hola!! What is your name? "
 
 read Who
@@ -14,6 +13,8 @@ then
     To install Python, check out https://installpython3.com/' >&2
   exit 1
 fi
+
+#include txt file with more intructions 
 
 python3 cc_app.py
 

@@ -62,7 +62,7 @@ while selection != "3":
 
 
 
-#         print()
+        print()
 
 
 # Display Menu 2 again for users to select The City Number 2
