@@ -12,7 +12,7 @@ print("What would you like to do?")
 
 # 1st Feature-------Creating function  Menu_1  ---------------------------------------------------------
 def options_menu1():
-    print("1. See the current time in two different cities?")
+    print("1. See the current time in two different cities")
     print("2. Predict the time in two cities ")
     print("3. Exit")
     user_selection = input ("Select options from (1-3): ")
