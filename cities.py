@@ -1,5 +1,3 @@
-
-
 # Code to see the list of all the timezones in pytz package 
 
 # import pytz 
