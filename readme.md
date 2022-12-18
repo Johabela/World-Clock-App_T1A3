@@ -2,6 +2,8 @@
 
 [Github](https://github.com/Johabela/World-Work-App_T1A3)
 
+[Video Presentation - Slide deck ](https://vimeo.com/782220760#t=601)
+
 ___
 
 **Code Style Guide**
