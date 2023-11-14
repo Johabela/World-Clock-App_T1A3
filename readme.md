@@ -57,7 +57,9 @@ To be able to run the World Work App, you will need the install or have the foll
 
 - Datetime ans Os are Python's built-in modules, you won't need to install. 
 
+- Activate the virtual environment with the command in the terminal -> source venv/bin/activate
 
+- Run the Python script -> python cc_app.py
 ___
 
 
